@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.gagan.project.spring</groupId>
-    <artifactId>Technical Blog</artifactId>
+    <artifactId>TechnicalBlog</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <name>Technical Blog</name>
@@ -71,6 +71,9 @@
 
     <build>
         <plugins>
+            <!-- collects all the jars on the classpath and builds a single, runnable jar -->
+            <!-- searches for the public static void main() method to flag as a runnable class -->
+            <!-- provides a built-in dependency resolver that sets the version number to match Spring Boot dependencies -->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
